@@ -7,16 +7,13 @@ def print_even_recursive(number):
     #recursive function: number minus two
     print_even_recursive(number - 2)
 
-print("recursive")
+print("Recursive:")
 print_even_recursive(10)
 
 def print_even_iterative(number):
-    while True:
-        if number <= 0:
-            break
-        else:
-            print(number)
-            number -= 2
+    while number > 0:
+        print(number)
+        number -= 2
 
-print("iterative")
+print("Iterative:")
 print_even_iterative(10)

@@ -7,16 +7,13 @@ def double_until_limit_recursive(number, limit):
     #recursive step: (number*2, limit)
     double_until_limit_recursive(number * 2, limit)
 
-print("Recursive")
+print("Recursive:")
 double_until_limit_recursive(2, 40)
 
 def double_until_limit_iterative(number, limit):
-    while True:
-        if number > limit:
-            break
-        else:
-            print(number)
-            number *= 2
+    while number < limit:
+        print(number)
+        number *= 2
 
-print("Iterative")
+print("Iterative:")
 double_until_limit_iterative(2, 40)
